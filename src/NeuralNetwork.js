@@ -15,8 +15,8 @@ export default class {
         for (let i = 0; i < sizes.length; i++) {
             var size = sizes[i];
             var nextSize = 'undefined' !== typeof sizes[i + 1] ? sizes[i + 1] : 0;
-            
-            this.#layers.push(new Layer(size, nextSize));            
+
+            this.#layers.push(new Layer(size, nextSize));
         }
     }
 
@@ -82,6 +82,7 @@ export default class {
         }
 
         console.log('RESULT', values);
+
 
         return values;
     }
